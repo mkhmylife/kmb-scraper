@@ -1,0 +1,11 @@
+/.idea
+node_modules
+/.env
+/.mysql
+/.es_data
+.DS_Store
+/.chrome-profile
+/combined.log
+/error.log
+/data
+/build

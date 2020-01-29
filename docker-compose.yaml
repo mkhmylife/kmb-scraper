@@ -1,0 +1,16 @@
+version: "3"
+
+networks:
+  frontend:
+    driver: bridge
+
+services:
+  proxy:
+    image: 437184461664.dkr.ecr.ap-southeast-1.amazonaws.com/hyperair-proxy:latest
+    ports:
+      - 24000:24000
+      - 22999:22999
+      - 22555:22555
+      - 22998:22998
+    networks:
+      - frontend
